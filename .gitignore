@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Notebooks (kept locally, not published)
+*.ipynb
+
+# Dataset
+data/
+
+# Model checkpoints & outputs
+outputs/
+*.pth
+*.pt
+*.onnx
+temp_best.pth
+qat_best_temp.pth
+temp_pruned_best.pth
+teacher_best.pth
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

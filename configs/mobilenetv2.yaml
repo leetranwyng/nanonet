@@ -1,0 +1,34 @@
+# MobileNetV2-0.1x pipeline reference hyperparameters.
+# These match the experimental configuration reported in the SOICT 2026 paper.
+
+dataset_dir: ./data/brisc2025/classification_task
+output_dir:  ./outputs/mobilenetv2
+
+data:
+  num_classes:  4
+  image_size:   224
+  batch_size:   64
+  val_split:    0.2
+  seed:         42
+  num_workers:  0
+
+teacher:
+  epochs:       50
+  lr:           1.0e-3
+  weight_decay: 1.0e-4
+
+pruning:
+  ratio:          0.60   # 60% channel sparsity → ~66.2% param reduction
+  iterative_steps: 6
+  finetune_epochs:  7
+  finetune_lr:      5.0e-4
+  finetune_patience: 3
+  final_epochs:     50
+  final_lr:         1.0e-4
+  final_patience:   10
+
+qat:
+  epochs:   15
+  lr:       5.0e-5
+  patience: 5
+  backend:  qnnpack   # use fbgemm for x86 inference
