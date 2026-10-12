@@ -142,16 +142,8 @@ nanonet/
 If you use this code in your research, please cite:
 
 ```bibtex
-@inproceedings{nanonet2026soict,
-  title     = {NanoNet: An Ultra-Lightweight Neural Architecture with Iterative Pruning
-               and Quantization-Aware Training for Brain Tumor Classification},
-  booktitle = {Proceedings of the 2026 Symposium on Information and Communication Technology (SOICT)},
-  year      = {2026},
+@misc{nguyennanonet,
+  author = {Nguyen, Le-Tran and Huynh, Huu-Thuan and Tran, Minh-Triet and Le, Trung-Nghia},
+  title  = {NanoNet: Ultra-Lightweight Network for MRI Brain Tumor Classification toward Edge AI},
 }
 ```
-
----
-
-## License
-
-This project is released under the [MIT License](LICENSE).
